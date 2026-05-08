@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inbox Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="flex h-screen items-center justify-center bg-gray-100">
+    <div
+      class="grid h-screen w-screen grid-cols-[240px_1fr_80px] grid-rows-[64px_1fr]"
+    >
+      <!-- Navbar -->
+      <!-- Navbar -->
+      <div class="col-span-3 flex shrink items-center bg-[#F8FAFD] px-4"></div>
+
+      <!-- Left Sidebar -->
+      <aside class="flex items-center justify-center bg-gray-400">
+        <h3 class="font-medium text-black">Left</h3>
+      </aside>
+
+      <!-- Main -->
+      <main class="flex items-center justify-center bg-gray-300">
+        <h3 class="font-semibold text-gray-800">Main</h3>
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="flex items-center justify-center bg-gray-400">
+        <h3 class="font-medium text-black">Right</h3>
+      </aside>
+    </div>
+  </body>
+</html>

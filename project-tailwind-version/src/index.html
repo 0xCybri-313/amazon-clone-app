@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon-using-tailwind</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <header class="#top">
+      <div
+        class="flex h-28 flex-wrap items-center justify-between bg-[#131921] p-2 text-white md:h-16 md:flex-nowrap md:justify-evenly"
+      >
+        <a class="shrink-0" href="index.html">
+          <div class="h-border">
+            <img
+              src="../logo/amazon_logo_white.png"
+              alt="Amazon Logo"
+              class="h-10 w-auto"
+            />
+          </div>
+        </a>
+        <a class="nav_links" href="location.html">
+          <div class="h-border hidden lg:block">
+            <p class="ml-5 text-sm text-[#cccccc]">Deliver to</p>
+            <div class="flex items-center">
+              <i class="fa-solid fa-location-dot fa-beat"></i>
+              <p class="text-base text-white">Pakistan</p>
+            </div>
+          </div>
+        </a>
+        <div
+          class="h-border-orange order-last flex h-10 w-2xl justify-evenly md:order-0"
+        >
+          <select
+            class="search_option w-16 rounded-tl-[.7rem] rounded-bl-[.7rem] bg-[#f3f3f3] text-center text-black"
+          >
+            <option value="">All</option>
+          </select>
+          <input
+            class="w-full bg-white text-base"
+            type="text"
+            placeholder="Search Amazon.pk"
+          />
+          <div
+            class="flex w-12 items-center justify-center rounded-tr-[.7rem] rounded-br-[.7rem] bg-[#febd69] text-xl text-black"
+          >
+            <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+          </div>
+        </div>
+        <a class="hidden lg:block" href="account.html">
+          <div class="h-border">
+            <p><span class="text-xs">Hello, Signin</span></p>
+            <p class="text-sm font-bold">Account & Lists</p>
+          </div>
+        </a>
+        <a class="nav_links hidden lg:block" href="orders.html">
+          <div class="h-border text-white">
+            <p>
+              <span class="text-xs">Return</span>
+            </p>
+            <p class="text-sm font-bold">& Orders</p>
+          </div>
+        </a>
+        <a class="nav_links" href="cart.html">
+          <div class="h-border p-1 text-sm font-bold">
+            <i class="fa-solid fa-cart-shopping fa-shake text-xl"></i>
+            Cart
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="panel flex h-10 items-center justify-between bg-[#232f3e] text-sm text-white md:justify-evenly"
+      >
+        <div class="panel_all h-border p-2">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+        <div class="flex w-[50%] justify-evenly text-sm">
+          <p class="h-border hidden md:block">Today's Deals</p>
+          <p class="h-border hidden lg:block">Customer Service</p>
+          <p class="h-border hidden lg:block">Gift Cards</p>
+          <p class="h-border hidden md:block">Registry</p>
+          <p class="h-border hidden md:block">Sell</p>
+        </div>
+        <div class="panel_deals h-border pr-0.5 text-base font-bold">
+          Shop deals <span class="hidden md:inline">in Electronics</span>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="flex h-64 w-full items-end justify-center bg-cover bg-top md:h-96 lg:h-96"
+      style="background-image: url(&quot;../logo/hero-image.jpg&quot;)"
+    >
+      <div
+        class="mb-16 flex h-10 w-[70%] items-center justify-around space-x-4 rounded-lg bg-white text-center text-sm text-black md:justify-center"
+      >
+        <p>
+          Up to 50% off
+          <span class="hidden md:inline"
+            >electronics, toys, fashion & more</span
+          >
+        </p>
+        <button
+          class="group relative overflow-hidden rounded-md px-4 py-1 text-sm font-semibold tracking-wider text-[#2c9caf] uppercase outline-[#2c9caf] transition-all duration-500 hover:scale-105 hover:text-white hover:outline-[#70bdca]"
+        >
+          <span
+            class="absolute top-0 left-0 -z-10 h-full w-0 bg-[#2c9caf] transition-all duration-500 group-hover:w-full"
+          ></span>
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="shop_items flex shrink-0 grow-0 flex-wrap justify-evenly gap-5 bg-[#E3E6E6] p-4"
+    >
+      <div class="box shrink-0 grow-0">
+        <div class="box_content">
+          <h2>PlayStation 5</h2>
+          <div class="image1 box_image"></div>
+          <p class="see_more">See more</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_content">
+          <h2>Gaming PC</h2>
+          <div class="box_image image2"></div>
+          <p class="see_more">See more</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_content">
+          <h2>Gaming Controller</h2>
+          <div class="box_image image3"></div>
+          <p class="see_more">See more</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_content">
+          <h2>Gaming Laptop</h2>
+          <div class="box_image image4"></div>
+          <p class="see_more">See more</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_content">
+          <h2>Racing Simulator</h2>
+          <div class="box_image image5"></div>
+          <p class="see_more">See more</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_content">
+          <h2>Gaming Chair</h2>
+          <div class="box_image image6"></div>
+          <p class="see_more">See more</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_content">
+          <h2>Headset & Mic</h2>
+          <div class="box_image image7"></div>
+          <p class="see_more">See more</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_content">
+          <h2>RGB Accessories</h2>
+          <div class="box_image image8"></div>
+          <p class="see_more">See more</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer>
+      <div class="mt-4 no-underline">
+        <a href="#top"
+          ><p
+            class="flex h-10 items-center justify-center bg-[#37475a] text-base font-bold text-white no-underline"
+          >
+            Back To Top
+          </p></a
+        >
+      </div>
+      <div
+        class="foot_panel_2 flex justify-evenly bg-[#0f1111] py-5 text-white"
+      >
+        <div class="foot_box">
+          <h3>Get to Know Us</h3>
+          <p>Careers</p>
+          <p>Blog</p>
+          <p>About Amazon</p>
+          <p>Sustainability</p>
+          <p>Press Center</p>
+          <p>Investor Relations</p>
+          <p>Amazon Devices</p>
+          <p>Amazon Tours</p>
+        </div>
+        <div class="foot_box hidden lg:block">
+          <h3>Make Money with Us</h3>
+          <p>Sell products on Amazon</p>
+          <p>Sell on Amazon Business</p>
+          <p>Sell apps on Amazon</p>
+          <p>Become an Affiliate</p>
+          <p>Advertise Your Products</p>
+          <p>Self-Publish with Us</p>
+          <p>Host an Amazon Hub</p>
+          <p>See More Make Money with Us</p>
+        </div>
+        <div class="foot_box hidden md:block">
+          <h3>Amazon Payment Products</h3>
+          <p>Amazon Rewards Visa Signature Cards</p>
+          <p>Amazon.com Store Card</p>
+          <p>Amazon Business Card</p>
+          <p>Amazon Business Line of Credit</p>
+          <p>Shop with Points</p>
+          <p>Credit Card Marketplace</p>
+          <p>Reload Your Balance</p>
+          <p>Amazon Currency Converter</p>
+        </div>
+        <div class="foot_box">
+          <h3>Let Us Help You</h3>
+          <p>Your Account</p>
+          <p>Your Orders</p>
+          <p>Shipping Rates & Policies</p>
+          <p>Returns & Replacements</p>
+          <p>Manage Your Content and Devices</p>
+          <p>Your Recalls and Product Safety Alerts</p>
+          <p>Amazon Assistant</p>
+          <p>Help</p>
+        </div>
+      </div>
+      <div
+        class="foot_panel_3 flex items-center justify-center border-t border-[#3a4553] bg-[#3a4553] p-4 text-center text-sm text-white"
+      >
+        <a href="#top"
+          ><div
+            class="logo h-12 w-32 bg-cover"
+            style="background-image: url(../logo/amazon_logo_white.png)"
+          ></div
+        ></a>
+      </div>
+      <div class="foot_panel_4 bg-[#0f1111] p-4 text-center text-sm text-white">
+        <a>Conditions of Use & Sale</a>
+        <a>Privacy Notice</a>
+        <a>Interest-Based Ads</a>
+        <div class="copyright">
+          <a>© 1996-2024, Amazon.com, Inc. or its affiliates</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
